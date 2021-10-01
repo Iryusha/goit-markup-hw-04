@@ -137,6 +137,18 @@ a {
  margin-right: 50px;
 
 }
+.email-icon {
+    height: 12px;
+    width: 16px;
+    margin-right: 10px;
+    fill: currentColor;
+}
+.tel-icon {
+    height: 16px;
+    width: 10px;
+    margin-right: 10px;
+    fill: currentColor;  
+}
   
 
 /* HERO */
@@ -172,16 +184,31 @@ a {
      max-width: 1600px;
      margin: auto;
      text-align: center;
-     background-image: linear-gradient(rgba(47,48,58,0.4), rgba(47,48,58,0.4) ),
+     background-image: linear-gradient(to right, rgba(47,48,58,0.4), rgba(47,48,58,0.4) ),
       url(../imeges/background.jpg);
      background-repeat: no-repeat;
      background-position: center;
      background-size: cover;
     }
+    .pictures {
+    height: 120px;
+    background-color: #F5F4FA;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .icon-antena,
+    .icon-clock,
+    .icon-diagram,
+    .icon-astronaut  {
+        height: 70px;
+        width: 70px;
+    }    
     .social-item {
         width: 44px;
         height: 44px;
-
+       
     }
     .social-link {
         /* display: block; */
@@ -196,6 +223,7 @@ a {
     .social-list {
         display: flex;
         justify-content: center;
+        align-items: center;
     }
     .social-item +.social-item {
         margin-left: 10px;
@@ -204,6 +232,8 @@ a {
         width: 20px;
         height: 20px;
         fill: #afb1b8;
+        justify-content: center;
+        align-items: center;
     }
  
  .hero-btn {
@@ -323,7 +353,11 @@ a {
 }
 .photo-us {
     flex-basis: calc(100% / 4 - 90px); 
-          
+    box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 
+    0px 1px 1px rgb(0 0 0 / 14%), 
+    0px 2px 1px rgb(0 0 0 / 20%);  
+    border-radius: 0px 0px 4px 4px;
+    background-color:var(--primary-title-color) ;    
 }
 .photo-us:not(:first-child) {
     margin-left: 30px;
@@ -362,6 +396,42 @@ a {
     padding: auto;
     margin-top: 10px;
 }
+.client-section {
+    /* display: flex; */
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.title-client {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    margin-bottom: 50px;
+}
+.client-item {
+    display: flex;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    justify-content: center;
+    align-items: center;
+    }
+.client-item:not(:last-child) {
+    margin-right: 30px;
+}
+.company-icon {
+    width: 42px;
+    height: 46px;
+}
+.client-list {
+    display: flex;
+    justify-content: center;
+}
+
 /* FOOTER */
 .logo-foot {
     margin-bottom: 20px;
