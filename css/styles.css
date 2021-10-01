@@ -10,11 +10,11 @@
 html {
  box-sizing: border-box;
 }
-*,
+/* *,
 *::after,
 *::before {
     box-sizing: inherit;
-}
+} */
 body { 
     font-family: 'Roboto', sans-serif;
     margin: 0px;
@@ -172,7 +172,39 @@ a {
      max-width: 1600px;
      margin: auto;
      text-align: center;
- }
+     background-image: linear-gradient(rgba(47,48,58,0.4), rgba(47,48,58,0.4) ),
+      url(../imeges/background.jpg);
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+    }
+    .social-item {
+        width: 44px;
+        height: 44px;
+
+    }
+    .social-link {
+        /* display: block; */
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background-color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .social-list {
+        display: flex;
+        justify-content: center;
+    }
+    .social-item +.social-item {
+        margin-left: 10px;
+    }
+    .social-icon {
+        width: 20px;
+        height: 20px;
+        fill: #afb1b8;
+    }
  
  .hero-btn {
     font-family: Roboto;
