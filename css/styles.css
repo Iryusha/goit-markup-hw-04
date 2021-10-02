@@ -373,9 +373,11 @@ a {
 .team-list {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -30px;
+    /* margin-left: -30px; */
 }
-
+.team-list > .photo-us{
+    flex-basis: calc((100% / 4) - 30px);
+}
 .team-photo {
     margin-bottom: 30px;
     
@@ -419,7 +421,9 @@ a {
     color: #212121;
     margin-bottom: 50px;
 }
-
+/* .client-list > .client-item{
+    flex-basis: calc((100% / 6) - 30px);
+} */
 .client-item {
     display: flex;
     width: 170px;
@@ -438,8 +442,8 @@ a {
     margin-right: 30px;
 }
 .company-icon {
-    width: 42px;
-    height: 46px;
+    width: 106px;
+    height: 60px;
     fill: var(--primary-text-color);
 
 }
@@ -462,7 +466,7 @@ a {
     margin-bottom: 20px;
     height: 31px;
     width: 145px;
-    margin-right: 70px;
+    /* margin-right: 70px; */
 }
 .Logostudio-footer {
     color: #ffffff;
@@ -514,12 +518,12 @@ a {
     margin-bottom: 9px;
 }
 .footer-social {
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
     
 }
 .social-title {
-    display: flex;
+    /* display: flex; */
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
@@ -536,13 +540,14 @@ a {
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
-.head-footer-container {
-    display: flex;
-    align-items: baseline;
-}    
+/* .head-footer-container {
+    
+}     */
 
 .footer-container {
-    margin-right: 70px;
+    display: flex;
+    align-items:baseline; 
+    /* margin-right: 70px; */
 }
 
 .footer-social-link {
@@ -568,6 +573,9 @@ a {
     width: 20px;
     height: 20px;
     fill: var(--primary-title-color);
+}
+.footer-web{
+    margin-right: 70px;
 }
 
 /* PORTFOLIO */
